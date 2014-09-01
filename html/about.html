@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	body{
+		margin:0;
+		padding:0;
+	}
+		.menu-container{
+			position:absolute;
+			top:0;
+			width:100%;
+			height:80px;
+			background-color: #330033;
+			z-index: 1;
+		}
+
+		.menu {
+			position:relative;
+			width: 800px;
+			height:100%;
+			margin:0 auto;
+		}
+		.container{
+			position: absolute;
+			width:100%;
+			height:100%;
+			background-color:#CCCCCC;
+		}
+		.contents{
+			z-index: 0;
+			position:relative;
+			height:100%;
+			width:800px;
+			margin:0 auto;
+			padding:80px 0 0 0;
+		}
+		.about{
+			width:800px;
+			height:497px;
+			background:url(image/about-page.png);
+			background-size:800px 497px;
+			margin:40px auto 0;
+		}
+		.top-menu{
+			position:absolute;
+			top:40px;
+			right:10px;
+		}
+
+		.top-menu a {
+			text-decoration: none;
+			margin-left:20px;
+		}
+
+		.top-menu a .normal {
+			display: inline;
+		}
+
+		.top-menu a .select {
+			display: none;
+		}
+
+		.top-menu a:hover .normal {
+			display:none; 
+		}
+
+		.top-menu a:hover .select {
+			display:inline; 
+		}
+
+		.top-menu a.select .normal {
+			display:none; 
+		}
+		
+		.top-menu a.select .select {
+			display:inline; 
+		}
+
+		.logo {
+			position:absolute;
+			top:20px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu-container">
+			<div class="menu">
+				<div class="logo">
+					<img src="image/logo.png">
+				</div>
+				<div class="top-menu">
+					<a href="work.html" >
+						<img class="normal" src="image/work.png">
+						<img class="select" src="image/work_select.png">
+					</a>
+					<a href="about.html" class="select">
+						<img class="normal" src="image/about.png">
+						<img class="select" src="image/about_select.png">
+					</a>
+					<a href="contact.html">
+						<img class="normal" src="image/contact.png">
+						<img class="select" src="image/contact_select.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="contents">
+			<div class="about"></div>
+		</div>
+	</div>
+</body>
+
+</html>
